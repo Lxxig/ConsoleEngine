@@ -31,9 +31,9 @@ void Player::Update(float deltaTime)
 		// 새 위치 계산.
 		Vector2 newPosition = position;
 		++newPosition.x;
-		if (newPosition.x > 30)
+		if (newPosition.x > 40)
 		{
-			newPosition.x = 30;
+			newPosition.x = 40;
 		}
 
 		SetPosition(newPosition);
@@ -57,9 +57,9 @@ void Player::Update(float deltaTime)
 		// 새 위치 계산.
 		Vector2 newPosition = position;
 		++newPosition.y;
-		if (newPosition.y > 24)
+		if (newPosition.y > 15)
 		{
-			newPosition.y = 24;
+			newPosition.y = 15;
 		}
 
 		SetPosition(newPosition);

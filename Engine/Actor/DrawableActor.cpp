@@ -16,6 +16,8 @@ void DrawableActor::Draw()
 	Engine::Get().SetCursorPosition(position);
 
 	// 2단계: 그리기 (콘솔 출력).
+	HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(handle, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_INTENSITY);
 	Log("%c", image);
 }
 

@@ -4,7 +4,7 @@
 
 TestLevel::TestLevel()
 {
-	AddActor(new Player('A'));
+	AddActor(new Player('P'));
 }
 
 TestLevel::~TestLevel()
